@@ -742,8 +742,7 @@ margin-bottom: 1rem;
 }
 .design .design__wrapper{
   display: grid;
-  grid-template-columns: 2fr 2fr;
-
+  grid-template-columns: 3fr 3fr;
 }
 
 .design .design__wrapper .design__left{
@@ -786,6 +785,7 @@ margin-left: 25rem;
   font-weight: 600;
   margin-bottom: 2rem;
   color: var(--clr-secondary);
+  text-align: center;
   
 }
 .design .design__title p{
@@ -795,27 +795,107 @@ margin-left: 25rem;
   color: var(--clr-light);
 }
 
-.design .design__wrapper .design__right{
-
-
+.design .design__wrapper .design__right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 3rem);
+  grid-column-gap: 0px;
+  grid-row-gap: 15px;
+  text-align: center;
 }
+.design .design__wrapper .design__right ul{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
 
 /*Recent Projects*/  
 .recent{
   background: var(--clr-light);
   padding: 5rem 0;
 }
+.recent .recent__title H1{
+ font-size: 4.5rem;
+ text-align: center;
+ color: var(--clr-primary);
+}
 .recent .recent__wrapper{
   display: grid;
   grid-template-columns: 50rem 50rem 50rem;
   justify-content: center;
+  gap: 5rem;
 }
-.recent .recent__wrapper.recent__details{
+
+.recent .recent__wrapper img{
+  width: 50rem;
+}
+.recent .recent__wrapper .recent__detail{
+display: flex;
+justify-content: space-between;
+}
+
+.recent .recent__wrapper .recent__detail i{
+font-size: 3rem;
+  }
+.recent .recent__wrapper .recent__detail p{
+    font-size: 2rem;
+      }
+
+.recent .recent__wrapper .recent__detail .recent__left{
+  display: flex;
+}
+
+.recent .recent__wrapper .recent__detail .recent__right{
   display: flex;
 }
 
 
 
+/* Contacts */
+.contact{
+  background-color: var(--clr-light);
+  padding-top: 20rem;
+  padding-bottom: 7rem;
+}
+.contact .contact__wrapper .contact__details{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.contact .contact__wrapper .contact__left{
+  max-width: 60rem;
+  margin-top: 12rem;
+}
+
+.contact .contact__wrapper .contact__left p{
+color: var(--clr-dark);
+justify-content: center;
+
+}.contact .contact__wrapper .contact__left h1{
+font-size: 8rem;
+font-weight: 700;
+margin-bottom: 3rem;
+color: var(--clr-primary);
+margin-left: 8rem;
+}
+.contact .contact__wrapper .contact__right{
+  max-width: 60rem;
+  margin-top: 12rem;
+  background-color: #2b2b2b;
+  width: 100%;
+  max-width: 50rem;
+  height: 50rem;
+}
+.contact .contact__wrapper .contact__details .contact__right li{
+margin-top: 5rem;
+color: var(--clr-light);
+text-align: left;
+margin-left: 5rem;
+}
+.contact .contact__wrapper .contact__details .contact__right i{
+  color: #cfa584;
+}
 
 
 
