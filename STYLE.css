@@ -735,6 +735,34 @@ margin-bottom: 1rem;
   width: 60rem;
   height: 70rem;
 }
+/* Update Responsive */
+@media screen and (max-width:520px){
+  .Update .Update__wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+  .Update .Update__wrapper .Update__left h1{
+    margin-top: 0;
+    font-size: 5rem;
+    
+  }
+  .Update .Update__wrapper .Update__right p{
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .Update .Update__wrapper img{
+    max-width: 40rem;
+  }
+  
+  .Update .Update__title{
+   font-size: 5rem;
+   margin: 0;
+   background-color: var(--clr-primary);
+   color: var(--clr-light);
+  }
+  
+}
 /* Designs */
 .design{
   background: var(--clr-light);
@@ -808,8 +836,33 @@ margin-left: 25rem;
   font-weight: 600;
 }
 
-
-
+/* Design Responsive */
+@media screen and (max-width:520px){
+  .design .design__wrapper{
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 5rem;
+  }
+  .design .design__wrapper .design__right h2{
+    margin: 0;
+    font-size: 4.5rem;
+  }
+  .design .design__wrapper .design__right p{
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .design .design__wrapper .design__left img{
+    max-width: 50rem;
+  }
+  
+  .design .design__title{
+   font-size: 5rem;
+   margin: 0;
+   background-color: var(--clr-primary);
+   color: var(--clr-light);
+  }
+  
+}
 /*Recent Projects*/  
 .recent{
   background: var(--clr-light);
@@ -828,11 +881,12 @@ margin-left: 25rem;
 }
 
 .recent .recent__wrapper img{
-  width: 50rem;
+  width: 40rem;
 }
 .recent .recent__wrapper .recent__detail{
 display: flex;
-justify-content: space-between;
+align-items: center;
+gap: 20rem;
 }
 
 .recent .recent__wrapper .recent__detail i{
@@ -853,56 +907,69 @@ font-size: 3rem;
 
 
 /* Contacts */
-.contact{
+.contacts{
   background-color: var(--clr-light);
-  padding-top: 20rem;
+  padding-top: 15rem;
   padding-bottom: 7rem;
 }
-.contact .contact__wrapper .contact__details{
+.contacts .contacts__wrapper{
   display: flex;
-  justify-content: space-between;
-  
-}
-.contact .contact__wrapper .contact__left{
-  max-width: 60rem;
-  margin-top: 12rem;
-}
-
-.contact .contact__wrapper .contact__left p{
-color: var(--clr-dark);
 justify-content: center;
+gap: 15rem;
+margin-left:5rem ;
+}
+.contacts .contacts__wrapper .contacts__left h1{
+  color: var(--clr-primary);
+  font-size: 5rem;
+}
+.contacts .contacts__wrapper .contacts__left .contacts__content form{
+  display: flex;
+  flex-direction: column;
+padding-bottom: 2rem;
+padding-top: 5rem;
+  justify-content: left;
+}
+.contacts .contacts__wrapper .contacts__left .contacts__content input{
+  border: none;
+  border-bottom: 1px solid rgb(62,56,56);
+  padding: .5rem;
+}
 
-}.contact .contact__wrapper .contact__left h1{
-font-size: 8rem;
-font-weight: 700;
-margin-bottom: 3rem;
-color: var(--clr-primary);
-margin-left: 8rem;
+.contacts .contacts__wrapper .contacts__left .contacts__content textarea{
+  border: none;
+  border-bottom: 1px solid rgb(62,56,56);
+  padding: .5rem;
 }
-.contact .contact__wrapper .contact__right{
-  max-width: 60rem;
-  margin-top: 12rem;
-  background-color: #2b2b2b;
-  width: 100%;
-  max-width: 50rem;
-  height: 50rem;
+
+
+
+.contacts .contacts__wrapper .contacts__right {
+    display: grid;
+    grid-template-columns: 5rem 20rem;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+  text-align: center;
+  background-color: var(--clr-dark);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-right: 15rem;
+  padding-left: 2rem;
+  justify-content: left;
+  margin-top: 10rem;
 }
-.contact .contact__wrapper .contact__details .contact__right li{
-margin-top: 5rem;
-color: var(--clr-light);
-text-align: left;
-margin-left: 5rem;
-}
-.contact .contact__wrapper .contact__details .contact__right i{
+.contacts .contacts__wrapper .contacts__right ul li{
   color: #cfa584;
+  font-size: large;
 }
-
-
-
-
-
-
-
+.contacts .contacts__wrapper .contacts__right ul span{
+  color: var(--clr-light);
+  text-align: left;
+}
+.contacts .contacts__wrapper .contacts__right h3{
+  font-size: 3rem;
+  color: var(--clr-light);
+}
 /*REPEATABLE PATTERNS*/
 
 .btn{
@@ -936,4 +1003,21 @@ margin-left: 5rem;
 .btn.bg--light:hover{
   background-color: var(--clr-light);
   color: var(--clr-light);
+}
+.button{
+  background-color: transparent;
+  border: transparent;
+  border-radius: 20rem;
+  padding: .4rem 20rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: transparent;
+  font-weight: 700;
+}
+.button.bg--dark{
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+.button.bg--dark:hover{
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
 }
